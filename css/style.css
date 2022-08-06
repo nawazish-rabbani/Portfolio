@@ -1,0 +1,295 @@
+body {
+    background: #F26B61;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-black {
+    background-color: #212121;
+}
+
+.bg-grey {
+    background-color: #F2F2F2;
+}
+
+.clr-red {
+    color: #F26B61;
+}
+
+.clr-white {
+    color: #ffffff;
+}
+.clr-green{
+   color: #5cbf8e;
+}
+
+h1 {
+    font-family: 'Ubuntu Mono';
+    font-weight: 600;
+}
+
+h2 {
+    font-family: 'Ubuntu Mono';
+    font-weight: normal;
+}
+
+.wd-100 {
+    width: 100%;
+}
+.w-40{
+     width: 40px;
+}
+
+.f-30 {
+    font-size: 30px;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.topdiv {
+    margin: 0 50px 50px !important;
+}
+
+#myHeader {
+    margin: 50px 50px 0 !important;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Ubuntu Mono';
+    color: #212121 !important;
+    font-weight: 500;
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #F26B61 !important;
+    }
+
+.primary-btn {
+    border: 1px solid #5cbf8e;
+    padding: 6px 10px;
+    font-family: 'Ubuntu Mono';
+    font-weight: normal;
+    color: #212121;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: 0.15s ease-in all;
+    min-width: 38px;
+    display: inline-block;
+}
+
+    .primary-btn:hover {
+        background-color: #F26B61;
+        color: #fff;
+    }
+    .contactbtn:hover{
+        color:fff !important;
+        background-color: #5cbf8e !important;
+    }
+    .resumbthn:hover{
+         border: 1px solid #F26B61;
+    }
+     .githubbtn:hover{
+        color:fff !important;
+        border: 1px solid #212121;
+        background-color: #212121 !important;
+    }
+     .linkedinbtn:hover{
+        color:fff !important;
+        border: 1px solid #0072b1;
+        background-color: #0072b1 !important;
+    }
+    .linkedinbtn:hover path, .githubbtn:hover path{
+            fill: #fff !important;
+    }
+    .primary-btn svg{
+        width:18px;
+        height: 18px;
+    }
+
+.secondary-btn {
+    border: 1px solid #fff;
+    padding: 4px 7px;
+    font-family: 'Ubuntu Mono';
+    font-weight: normal;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 11px;
+    transition: 0.15s ease-in all;
+    min-width: 34px;
+    display: inline-block;
+}
+
+    .secondary-btn:hover {
+        background-color: #F26B61;
+        color: #fff;
+    }
+     .secondary-btn img{
+        width:20px;
+    }
+.workdetail {
+    margin-bottom: 20px;
+}
+
+.workduration {
+    margin-bottom: 10px;
+}
+
+.worktitle {
+    font-family: 'Ubuntu Mono';
+    border: 1px solid;
+    padding: 5px 8px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+    .worktitle:hover {
+        transition: 0.15s ease-in all;
+        background: #fff;
+        color: #f26b61;
+    }
+
+.workdescription {
+    font-size: 13px;
+}
+
+.techdetail {
+    margin-bottom: 10px;
+}
+
+.techtitle {
+    font-family: 'Ubuntu Mono';
+    border: 1px solid;
+    padding: 5px 8px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    transition: 0.15s all ease-in
+}
+.techtitle:hover {
+    background:#5cbf8e;
+    color:#fff;
+}
+
+.techdescription {
+    font-size: 13px;
+}
+
+.edulogo {
+    width: 110px;
+}
+
+.medalicon {
+    width: 30px;
+}
+
+.achievementslist {
+    border: 1px solid #212121;
+    font-family: 'Ubuntu Mono';
+    margin:10px 0px !important;
+    transition: 0.15s all ease-in
+}
+.achievementslist:hover{
+    color:#fff;
+    background-color:#212121;
+}
+
+.achievementsmore {
+    border: 1px solid #aaa;
+    font-family: 'Ubuntu Mono';
+    color: #aaa;
+    min-height: 70px;
+    margin:10px 0px !important
+}
+
+  #myHeader.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        left: 0;
+        margin: 0 !important;
+        box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+        z-index: 9;
+    }
+
+    .sticky + .topdiv {
+        margin-top: 50px;
+    }
+
+    .sticky .navbar-brand {
+        display: block !important;
+    }
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 24px;
+}
+}
+@media (max-width:767px){
+    .navbar-collapse {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    left: 0;
+    padding: 20px;
+}
+    .navbar-toggler:focus {
+    box-shadow: none !important;
+}
+    #myHeader {
+    margin: 30px 30px 0 !important;
+}
+    .topdiv {
+    margin: 0 30px 30px !important;
+}
+    .primary-btn {
+    margin-right: 5px !important;
+    margin-bottom: 20px;
+    margin-left: 5px !important;
+}
+}
+
+.contactformmodal .modal-header{
+    border:0px;
+}
+.contactformmodal h1{
+    padding: 0;
+margin: 0;
+font-size: 40px;
+}
+.contactformmodal .modal-content{
+    border-radius:0px
+}
+.contactformmodal .modal-dialog {
+   max-width:400px;
+}
+.ContactForm input, .ContactForm textarea {
+    width: 100%;
+    padding: 5px 10px;
+    font-family: 'Ubuntu Mono';
+    border: 1px solid #bbb !important;
+    outline: none;
+    box-shadow: none;
+}
+.ContactForm input:focus, .ContactForm textarea:focus {
+    border: 1px solid #F26B61 !important;
+
+}
+.ContactForm a.sendform{
+    border: 1px solid #bbb;
+    padding: 8px 50px;
+      font-family: 'Ubuntu Mono';
+    text-decoration: none;
+    color: #212121;
+    text-transform:uppercase;
+    float: right;
+}
+.sendform:hover{
+    background-color: #F26B61 ;
+    color:#fff !important;
+}
