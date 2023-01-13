@@ -23,7 +23,7 @@ self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(cacheName).then(cache => {
       return cache.addAll([
-        `Portfolio/`,
+        `/`,
         `Portfolio/index.html`,
         'Portfolio/js/jquery.min.js',
         'Portfolio/js/fontawesome.js',
