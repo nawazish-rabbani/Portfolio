@@ -54,8 +54,7 @@
                                     <a class="nav-link" href="#achievements">achievements</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="" data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal">contact</a>
+                                    <a class="nav-link" href="mailto:nawazish.bhojani@gmail.com">contact</a>
                                 </li>
 
                             </ul>
@@ -90,8 +89,7 @@
 
             <div class="row pb-3 pt-3">
                 <div class="col-12 pb-4 text-center text-sm-start">
-                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                        class="primary-btn contactbtn px-3">CONTACT ME</a>
+                    <a href="mailto:nawazish.bhojani@gmail.com" class="primary-btn contactbtn px-3">CONTACT ME</a>
                     <a href="https://nawazish.dev/Nawazish_Resume.pdf" class="primary-btn px-3 resumbthn">DOWNLOAD
                         RESUME</a>
                     <a href="https://www.linkedin.com/in/nawazish-rabbani/" class="primary-btn linkedinbtn"><svg
@@ -324,42 +322,6 @@
 
     </div>
 
-    <div class="modal fade contactformmodal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header py-3">
-                    <h1 id="exampleModalLabel" class="hiremeheading">contact me</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body pt-0">
-                    <div class="row ContactForm">
-                        <div class="col-12 pb-3"> if you think we should be working together on interesting projects.
-                        </div>
-                        <div class="col-12 pb-1">
-                            <div id="msgSuccess" class="alert alert-success" role="alert" style="display: none;">
-                                Your Message has been sent, you will be contacted soon...
-                            </div>
-                        </div>
-                        <div class="col-12 pb-1">
-                            <div id="txtValidation" class="alert alert-danger" style="display: none;">
-                            </div>
-                        </div>
-                        <div class="col-12 pb-3"> <input id="txtName" type="text" placeholder="Name:*"
-                                autocomplete="off" required /> </div>
-                        <div class="col-12 pb-3"> <input id="txtEmail" type="email" placeholder="Email:*"
-                                autocomplete="off" required /> </div>
-                        <div class="col-12 pb-3"> <textarea id="txtBody" rows="3" placeholder="Ask me...*"
-                                autocomplete="off" required></textarea> </div>
-                        <div class="col-12 pb-3"> <a href="#" onclick="sendEmail()" class="sendform">Send</a> </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/fontawesome.js"></script>
     <script src="js/jquery.min.js"></script>
@@ -374,7 +336,7 @@
 
         // var isInternetAvailable = true;
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/sw.js', { scope: '/' })
+            navigator.serviceWorker.register('/Portfolio/sw.js', { scope: '/' })
                 .then(function (registration) {
                     //console.log('Service Worker Registered');
                 });
@@ -385,11 +347,6 @@
         }
         var base_url = window.location.origin;
         window.onscroll = function () { myFunction() };
-        $('#exampleModal').on('shown.bs.modal', function (e) {
-            $('#txtName').val('');
-            $('#txtEmail').val('');
-            $('#txtBody').val('');
-        })
         var header = document.getElementById("myHeader");
         var sticky = header.offsetTop + 100;
 
