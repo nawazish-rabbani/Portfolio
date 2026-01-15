@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nawazish Rabbani - Senior Full Stack Engineer</title>
+<link rel="icon" href="images/favicon.ico" type="image/gif" sizes="16x16">
     <style>
         /* CSS Variables */
         :root {
@@ -1191,7 +1192,7 @@
         }
     </style>
 </head>
-<body>
+<body class="dark-mode">
     <!-- Header -->
     <header class="header">
         <div class="container">
@@ -1201,8 +1202,8 @@
                     <span class="logo-text">Nawazish Rabbani</span>
                 </div>
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-                    <span class="sun-icon">☀️</span>
-                    <span class="moon-icon">🌙</span>
+                    <span class="moon-icon">☀️</span>
+                    <span class="sun-icon">🌙</span>
                 </button>
             </div>
         </div>
@@ -1220,12 +1221,7 @@
                     </p>
                     <div class="hero-buttons animate-fade-in-delay-3">
                         <a href="#experience" class="btn btn-primary">View My Work</a>
-                        <a href="mailto:nawazish.bhojani@gmail.com" class="btn btn-secondary">Get in Touch</a>
-                    </div>
-                    <div class="hero-contact animate-fade-in-delay-4">
-                        <a href="tel:+923222966605">+92 322 2966605</a>
-                        <a href="mailto:nawazish.bhojani@gmail.com">nawazish.bhojani@gmail.com</a>
-                        <a href="https://www.linkedin.com/in/nawazish-rabbani" target="_blank">LinkedIn</a>
+                        <a href="#" onclick="downloadResume()" class="btn btn-secondary">Download Resume</a>
                     </div>
                 </div>
                 <div class="hero-visual">
@@ -1263,7 +1259,7 @@
                         <p>Projects Delivered</p>
                     </div>
                     <div class="stat-card animate-bounce-in" style="animation-delay: 0.3s;">
-                        <div class="stat-number">15+</div>
+                        <div class="stat-number">2+</div>
                         <p>Certifications</p>
                     </div>
                     <div class="stat-card animate-bounce-in" style="animation-delay: 0.4s;">
@@ -1501,7 +1497,7 @@
                             </div>
                             <span class="status status-in-progress">In Progress</span>
                         </div>
-                        <p class="year">2025</p>
+                        <p class="year">2026</p>
                     </div>
 
                     <div class="cert-card animate-on-scroll">
@@ -1604,11 +1600,18 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Nawazish Rabbani. All rights reserved. Built with HTML, CSS & JavaScript.</p>
+            <p>&copy; 2026 Nawazish Rabbani. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
+
+         function downloadResume() {
+                var a = document.createElement("a");
+                a.href = "https://nawazish.dev/Nawazish_Rabbani.pdf";
+                a.download = "Nawazish_Rabbani.pdf";
+                a.click();
+        }
         // ===== DARK MODE TOGGLE =====
         const themeToggle = document.getElementById('themeToggle');
         const currentTheme = localStorage.getItem('theme') || 'light';
